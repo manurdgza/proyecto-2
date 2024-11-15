@@ -12,3 +12,5 @@ Avances:
 1.- En este primer avance se puede ver la lista de dispositivos que hay en la tienda y alado de estos dispositivos sale el precio, y la garantia
 de estos.
 
+2.- En este segundo avances utilice el diagrama de clases para darme a entender mejor acerca de las 
+clases que estoy manejando y asi mismo poder verlas fisicamente y entender mejor que programar.
