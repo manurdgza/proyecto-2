@@ -14,3 +14,5 @@ de estos.
 
 2.- En este segundo avances utilice el diagrama de clases para darme a entender mejor acerca de las 
 clases que estoy manejando y asi mismo poder verlas fisicamente y entender mejor que programar.
+
+3.- En este avance puse el metodo de composicion, asi mimso corregi el diagrama UML usando las flechas correctas
