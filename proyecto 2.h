@@ -5,94 +5,86 @@
 //  Created by Manuel Rodriguez on 07/11/24.
 //
 
-#ifndef proyecto_2
-#define proyecto_2
+#ifndef PROYECTO_2
+#define PROYECTO_2
 
 #include <string>
 #include <iostream>
+#include <vector>
 using namespace std;
 
-// Clase Computadora
-class Computadora {
+
+class Marca {
 private:
-    string marca;
+    string nombre;
+
+public:
+    Marca(string m) : nombre(m) {}
+
+    string getNombre() { return nombre; }
+};
+
+// Clase Producto (clase base para herencia)
+class Producto {
+private:
+    Marca marca;
     float precio;
     int garantia;
 
 public:
-    Computadora(string m, float p, int g) : marca(m), precio(p), garantia(g) {}
+    Producto(Marca m, float p, int g) : marca(m), precio(p), garantia(g) {}
 
-    //  getter
-    string getMarca() { return marca; }
+    // Getters
+    string getMarca() { return marca.getNombre(); }
     float getPrecio() { return precio; }
     int getGarantia() { return garantia; }
 
-    //  setter
-    void setMarca(string m) { marca = m; }
+    // Setters
+    void setMarca(Marca m) { marca = m; }
     void setPrecio(float p) { precio = p; }
     void setGarantia(int g) { garantia = g; }
 
-    // mostrar la información de la computadora
+    //  mostrar la información 
     void mostrarInformacion() {
-        cout << "Computadora: " << marca << endl;
-        cout << "Precio: $" << precio << endl;
-        cout << "Garantía: " << garantia << " meses" << endl;
+        cout << "Marca: " << getMarca() << endl;
+        cout << "Precio: $" << getPrecio() << endl;
+        cout << "Garantía: " << getGarantia() << " meses" << endl;
     }
 };
 
-// Clase Telefono
-class Telefono {
-private:
-    string marca;
-    float precio;
-    int garantia;
-
+// Clase Computadora (hereda de Producto)
+class Computadora : public Producto {
 public:
-    Telefono(string m, float p, int g) : marca(m), precio(p), garantia(g) {}
+    Computadora(Marca m, float p, int g) : Producto(m, p, g) {}
 
-    //  getter
-    string getMarca() { return marca; }
-    float getPrecio() { return precio; }
-    int getGarantia() { return garantia; }
-
-    //  setter
-    void setMarca(string m) { marca = m; }
-    void setPrecio(float p) { precio = p; }
-    void setGarantia(int g) { garantia = g; }
-
-    // mostrar la información del teléfono
     void mostrarInformacion() {
-        cout << "Teléfono: " << marca << endl;
-        cout << "Precio: $" << precio << endl;
-        cout << "Garantía: " << garantia << " meses" << endl;
+        cout << "Computadora: " << getMarca() << endl;
+        cout << "Precio: $" << getPrecio() << endl;
+        cout << "Garantía: " << getGarantia() << " meses" << endl;
     }
 };
 
-// Clase Audifonos
-class Audifonos {
-private:
-    string marca;
-    float precio;
-    int garantia;
-
+// Clase Telefono (hereda de Producto)
+class Telefono : public Producto {
 public:
-    Audifonos(string m, float p, int g) : marca(m), precio(p), garantia(g) {}
+    Telefono(Marca m, float p, int g) : Producto(m, p, g) {}
 
-    //  getter
-    string getMarca() { return marca; }
-    float getPrecio() { return precio; }
-    int getGarantia() { return garantia; }
-
-    //  setter
-    void setMarca(string m) { marca = m; }
-    void setPrecio(float p) { precio = p; }
-    void setGarantia(int g) { garantia = g; }
-
-    // mostrar la información de los audífonos
     void mostrarInformacion() {
-        cout << "Audífonos: " << marca << endl;
-        cout << "Precio: $" << precio << endl;
-        cout << "Garantía: " << garantia << " meses" << endl;
+        cout << "Teléfono: " << getMarca() << endl;
+        cout << "Precio: $" << getPrecio() << endl;
+        cout << "Garantía: " << getGarantia() << " meses" << endl;
+    }
+};
+
+// Clase Audifonos (hereda de Producto)
+class Audifonos : public Producto {
+public:
+    Audifonos(Marca m, float p, int g) : Producto(m, p, g) {}
+
+    void mostrarInformacion() {
+        cout << "Audífonos: " << getMarca() << endl;
+        cout << "Precio: $" << getPrecio() << endl;
+        cout << "Garantía: " << getGarantia() << " meses" << endl;
     }
 };
 

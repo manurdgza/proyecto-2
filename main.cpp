@@ -8,21 +8,25 @@
 #include "proyecto 2.h"
 
 int main() {
+    // Crear objetos Marca
+    Marca dellMarca("Dell");
+    Marca hpMarca("HP");
+    Marca samsungMarca("Samsung");
+    Marca appleMarca("Apple");
+    Marca sonyMarca("Sony");
+    Marca boseMarca("Bose");
+
     // Crear objetos de cada clase con diferentes marcas, precios y garantías
+    Computadora dell(dellMarca, 1200.0, 24);
+    Computadora hp(hpMarca, 1100.0, 18);
 
-    // Computadoras
-    Computadora dell("Dell", 1200.0, 24);
-    Computadora hp("HP", 1100.0, 18);
+    Telefono samsung(samsungMarca, 900.0, 12);
+    Telefono apple(appleMarca, 1300.0, 24);
 
-    // Teléfonos
-    Telefono samsung("Samsung", 900.0, 12);
-    Telefono apple("Apple", 1300.0, 24);
+    Audifonos sony(sonyMarca, 200.0, 6);
+    Audifonos bose(boseMarca, 250.0, 12);
 
-    // Audífonos
-    Audifonos sony("Sony", 200.0, 6);
-    Audifonos bose("Bose", 250.0, 12);
-
-    // Mostrar la información de cada objeto
+    // Mostrar la información
     cout << "Información de productos:\n" << endl;
 
     dell.mostrarInformacion();
@@ -44,4 +48,3 @@ int main() {
 
     return 0;
 }
-
