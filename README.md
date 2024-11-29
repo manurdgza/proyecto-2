@@ -1,18 +1,8 @@
 # proyecto-2
 Contexto:
-En este codigo es una tienda de electronicos, en el cual tu puedes ver los productos que hay, y cada producto incluye su precio,
-y asi mismo incluye los meses de garantia que el producto tiene. Hay 3 clases que se dividen en tipo de aparato electronico, despues
-cada clase tiene 2 objetos y estos 2 objetos son dependiendo a la clase la marca del dispositivo electronico.
+En este codigo se puede ver que es una tienda de cartas de juego, hay 4 tipos que son las comunes, raras, epicas y legendarias, primero te va a dar un menu en el cual puedes ver las caracteristicas de estas y selelccionar cual quieres, estas las vas agregando al carritoy te da opcion de ver el carrito, o ver cuanto va a ser el total. 
 
 Funcionalidad:
-En este proyecto vas a poder utilizar las opciones para solo ver los precios y los productos, y vas a poder seleccionar 
-los productos que quieras comprar para que al final te de el precio total de tu compra contando todos los productos que hayas seleccionado
+Este proyecto sirve para ver los costos y caracteristicas de cada producto, o en dado caso puedes agregar los productos a tu carrito y despues ver cuanto seria el total, esto se podria hacer para una tienda en linea en la cual puedes ver lo quee estas comprando, o en dado caso el precio de esto.
 
-Avances:
-1.- En este primer avance se puede ver la lista de dispositivos que hay en la tienda y alado de estos dispositivos sale el precio, y la garantia
-de estos.
-
-2.- En este segundo avances utilice el diagrama de clases para darme a entender mejor acerca de las 
-clases que estoy manejando y asi mismo poder verlas fisicamente y entender mejor que programar.
-
-3.- En este avance puse el metodo de composicion, asi mimso corregi el diagrama UML usando las flechas correctas
+No hay avances como tal ya que tuve que hacer el proyecto todo esta semana, pero primero cree la clase base que es en la que tiene las caracteristicas generales, despues las clases de herencia que son cada una tiene un atributo unico. Y al final agregue la clase de carrito, que esta es la que permite guardar objetos para ver que tienes en el carrito, o en dado caso ver el precio de los objetos que agregaste a este
