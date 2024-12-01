@@ -30,8 +30,8 @@ int main() {
     Epica epicaCaja(epicaNombre, 2.5, 40.0, 25, "Caja", "2 epicos");
 
     // aqui damos la informacion de los objetos legendarios con su respectiva informacion
-    Legendaria legendariaSobre(legendariaNombre, 1.5, 20.0, 5, "Sobre", "suma 30 de daño a todas las cartas de ataque");
-    Legendaria legendariaCaja(legendariaNombre, 7.5, 80.0, 25, "Caja", "Suma 30 de daño a las cartas de ataque y 30 de defensa a las cartas defensa");
+    Legendaria legendariaSobre(legendariaNombre, 1.5, 20.0, 5, "Sobre", "suma 30 de dano a todas las cartas de ataque");
+    Legendaria legendariaCaja(legendariaNombre, 7.5, 80.0, 25, "Caja", "Suma 30 de dano a las cartas de ataque y 30 de defensa a las cartas defensa");
 
     // aqui imrpimimos la informacion de todos los objetos para que el cliente pueda ver la informacion
     cout << "Información de las cartas:\n" << endl;
@@ -78,7 +78,7 @@ int main() {
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
-        if (opcion == 1) { //aqui vamos a asignar cada numero de opcion a su respectivo producto, por lo que con esto usamos un carrito.agregarsobre y dentro del parentesis va el producto que se va a añadir al carrito.
+        if (opcion == 1) { //aqui vamos a asignar cada numero de opcion a su respectivo producto, por lo que con esto usamos un carrito.agregarsobre y dentro del parentesis va el producto que se va a anadir al carrito.
             carrito.agregarSobre(comunSobre);
         } else if (opcion == 2) {
             carrito.agregarSobre(comunCaja);

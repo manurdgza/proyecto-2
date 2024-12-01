@@ -63,20 +63,20 @@ public:
     }
 };
 
-// Clases de calidad, esta va a tener como objeto la caja comun y el sobre comun, tiene de diferencia el daño que van a sumar las cartas
+// Clases de calidad, esta va a tener como objeto la caja comun y el sobre comun, tiene de diferencia el dano que van a sumar las cartas
 class Comun : public Carta {
 private:
-    int daño;
+    int dano;
 public:
     Comun(Nombre n, float pl, float p, int c, string empaque,int d)
-        : Carta(n, pl, p, c, empaque), daño(d) {}
+        : Carta(n, pl, p, c, empaque), dano(d) {}
 
-    int getDaño() { return daño; }
-    void setDaño(int d) { daño = d; }
+    int getDano() { return dano; }
+    void setDano(int d) { dano = d; }
 
     void mostrarInformacion() {
         Carta::mostrarInformacion();
-        cout << "Daño de las cartas: " << daño << endl;
+        cout << "Dano de las cartas: " << dano << endl;
     }
 };
 
